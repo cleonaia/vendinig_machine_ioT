@@ -1,0 +1,9 @@
+services:
+  vending-iot-lab:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      APP_NAME: "Vending Machine IoT Lab"
+      HMAC_SECRET: "change-me-local-only"
+      STORAGE_BACKEND: "memory"

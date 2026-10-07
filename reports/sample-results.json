@@ -1,0 +1,5 @@
+[
+  {"scenario": "normal_flow", "state": "COMPLETED"},
+  {"scenario": "replay_attack", "status": "blocked", "reason": "replay_detected"},
+  {"scenario": "tampered_message", "status": "blocked", "reason": "invalid_signature"}
+]
