@@ -180,7 +180,7 @@ This is supported through `app/devices/device_adapter.py` while preserving crypt
 
 ---
 
-If you found this project interesting, please give it a star ⭐
+If you found this project interesting, please give it a star ⭐ Thx!!!
 
 
 
