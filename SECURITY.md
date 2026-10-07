@@ -17,5 +17,5 @@ If you identify a safety issue or a security concern in the simulated workflow, 
 
 - Keep the system fail-secure
 - Preserve audit logging
-- Reject tampered or replayed inputs
 - Validate product and payment state transitions
+- Reject tampered or replayed inputs
