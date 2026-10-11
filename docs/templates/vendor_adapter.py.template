@@ -1,0 +1,57 @@
+"""NON-FUNCTIONAL STARTER TEMPLATE — not registered and not device compatible.
+
+Copy into app/devices only after replacing every field with documented,
+manufacturer-specific behavior and adding tests against an authorized sandbox.
+"""
+from __future__ import annotations
+
+from typing import Any
+
+from app.devices.device_adapter import AdapterDescriptor
+from app.domain.capabilities import Capability, CapabilityState, CommandResult
+
+
+class ManufacturerModelAdapterTemplate:
+    # Replace this metadata with the exact tested controller and firmware.
+    descriptor = AdapterDescriptor(
+        adapter_id="vendor.template.unimplemented",
+        manufacturer="UNSPECIFIED",
+        model="UNSPECIFIED",
+        protocol="UNSPECIFIED_DOCUMENTED_PROTOCOL",
+        configuration=(),  # Persist only non-secret allowlisted names/values.
+        authentication=("Resolve secret values from the process environment/secret manager",),
+        default_timeout_seconds=3.0,
+        recovery_method="DOCUMENTED_RECOVERY_PROCEDURE_REQUIRED",
+        limitations=("Template only. Not registered, tested, or compatible with hardware.",),
+        simulated=False,
+    )
+
+    def __init__(self, configuration: dict[str, Any]):
+        # Validate exact configuration keys/types here. Load credentials by
+        # environment variable name; never log or persist secret values.
+        raise RuntimeError("template is not an adapter; implement and test a manufacturer driver first")
+
+    def capabilities(self) -> list[Capability]:
+        # No capability is available until it has a documented implementation.
+        return [Capability("status.read", CapabilityState.UNSUPPORTED,
+                           "unimplemented_template", None, False,
+                           "Replace with documented controller support before registration.")]
+
+    def read_status(self, machine_id: str) -> dict[str, Any]:
+        raise NotImplementedError("implement a documented status read with timeout and schema validation")
+
+    def read_inventory(self, machine_id: str) -> list[dict[str, Any]]:
+        raise NotImplementedError("implement only if the controller documents inventory access")
+
+    def diagnostics(self, machine_id: str) -> dict[str, Any]:
+        raise NotImplementedError("implement documented read-only diagnostics")
+
+    def read_resource(self, machine_id: str, capability: str) -> Any:
+        raise NotImplementedError("validate capability and response schema before returning data")
+
+    def recover(self, machine_id: str) -> dict[str, Any]:
+        raise NotImplementedError("use only a documented, bounded recovery procedure")
+
+    def execute(self, machine_id: str, command_id: str, actor: str,
+                capability: str, parameters: dict[str, Any]) -> CommandResult:
+        raise NotImplementedError("validate permission, arguments, idempotency and documented ACK/readback")

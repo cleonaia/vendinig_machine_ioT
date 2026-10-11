@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="480" viewBox="0 0 1440 480" role="img" aria-labelledby="hero-title hero-desc">
+  <title id="hero-title">Vending Machine IoT Defensive Security Lab</title>
+  <desc id="hero-desc">Ilustración de una máquina expendedora simulada conectada a un laboratorio IoT local para pruebas defensivas reproducibles.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#081522"/><stop offset=".58" stop-color="#102b3b"/><stop offset="1" stop-color="#154052"/></linearGradient>
+    <linearGradient id="machine" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f0f6f2"/><stop offset="1" stop-color="#b9ced0"/></linearGradient>
+    <linearGradient id="window" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#143445"/><stop offset="1" stop-color="#0c202d"/></linearGradient>
+    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#3ce0b3"/><stop offset="1" stop-color="#70efc9"/></linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#b1d3dd" stroke-opacity=".055"/></pattern>
+    <filter id="shadow" x="-.25" y="-.2" width="1.5" height="1.5"><feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#020911" flood-opacity=".5"/></filter>
+  </defs>
+  <rect width="1440" height="480" rx="28" fill="url(#bg)"/>
+  <rect width="1440" height="480" rx="28" fill="url(#grid)"/>
+  <circle cx="1160" cy="232" r="270" fill="#3ce0b3" opacity=".055"/>
+  <circle cx="1330" cy="50" r="180" fill="#66aaff" opacity=".045"/>
+  <path d="M0 402c270-60 460 38 690 0s452-54 750-4v82H0z" fill="#040e18" opacity=".52"/>
+
+  <!-- Left: clear project identity and scope -->
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace">
+    <rect x="78" y="68" width="356" height="36" rx="18" fill="#153644" stroke="#376271"/>
+    <circle cx="99" cy="86" r="5" fill="#48e3b9"/>
+    <text x="116" y="91" font-size="13" font-weight="600" letter-spacing="1.15" fill="#d8e9eb">LOCAL IoT DEFENSIVE LAB</text>
+    <text x="76" y="177" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="66" font-weight="780" letter-spacing="-2.3" fill="#f7fbfa">VENDING</text>
+    <text x="76" y="246" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="66" font-weight="780" letter-spacing="-2.3" fill="#f7fbfa">MACHINE IoT</text>
+    <text x="82" y="291" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="27" font-weight="650" fill="#50e4bb">DEFENSIVE SECURITY LAB</text>
+    <text x="83" y="330" font-size="16" fill="#c1d3da">Simulated devices · Protocol research · Repeatable tests</text>
+    <text x="83" y="357" font-size="16" fill="#9eb9c4">Physical vending control is not implemented.</text>
+  </g>
+
+  <!-- Subtle data flow: the dashed line denotes a lab concept, not a live link. -->
+  <path d="M555 394H850" fill="none" stroke="#4fe2bd" stroke-width="2" stroke-dasharray="5 9" opacity=".55"/>
+  <circle cx="555" cy="394" r="4" fill="#4fe2bd"/>
+  <circle cx="850" cy="394" r="4" fill="#4fe2bd"/>
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" font-weight="600">
+    <rect x="80" y="404" width="112" height="38" rx="19" fill="#163746" stroke="#315c68"/><text x="108" y="428" fill="#d2e5e7">SIMULATED</text>
+    <rect x="204" y="404" width="94" height="38" rx="19" fill="#163746" stroke="#315c68"/><text x="228" y="428" fill="#d2e5e7">MQTT LAB</text>
+    <rect x="310" y="404" width="139" height="38" rx="19" fill="#163746" stroke="#315c68"/><text x="330" y="428" fill="#d2e5e7">EVIDENCE</text>
+    <rect x="461" y="404" width="180" height="38" rx="19" fill="#163746" stroke="#315c68"/><text x="482" y="428" fill="#d2e5e7">AUTHORIZED SCOPE</text>
+  </g>
+
+  <!-- Right: unmistakably a fictional vending machine in a lab -->
+  <g filter="url(#shadow)">
+    <!-- body -->
+    <rect x="902" y="43" width="360" height="390" rx="25" fill="url(#machine)" stroke="#f4fbf7" stroke-width="2"/>
+    <rect x="918" y="59" width="328" height="45" rx="12" fill="#183344"/>
+    <circle cx="941" cy="81" r="6" fill="#48e3b9"/>
+    <text x="958" y="86" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="14" font-weight="700" letter-spacing="1" fill="#e5f2f1">LAB DEVICE · SIMULATED</text>
+    <!-- product window -->
+    <rect x="922" y="119" width="218" height="222" rx="13" fill="url(#window)" stroke="#557583" stroke-width="2"/>
+    <!-- shelf rails -->
+    <path d="M934 188h194M934 257h194M934 326h194" stroke="#708d98" stroke-width="5" stroke-linecap="round"/>
+    <!-- fictional cans and bottles -->
+    <g stroke-width="2">
+      <rect x="943" y="137" width="37" height="43" rx="9" fill="#f1b45c" stroke="#ffd48e"/><path d="M951 137v-5h21v5" stroke="#ffd48e"/><path d="M950 153h23" stroke="#fff0c8" opacity=".8"/>
+      <path d="M1000 140q0-6 8-6h18q8 0 8 6v38q0 4-5 4h-24q-5 0-5-4z" fill="#49b8ee" stroke="#91dcff"/><path d="M1005 151h24" stroke="#daf5ff" opacity=".8"/>
+      <rect x="1060" y="137" width="37" height="43" rx="9" fill="#ea7183" stroke="#ffb0b7"/><path d="M1068 137v-5h21v5" stroke="#ffb0b7"/><path d="M1067 153h23" stroke="#ffe0e1" opacity=".8"/>
+      <path d="M946 203q0-6 7-6h20q7 0 7 6v37q0 4-5 4h-24q-5 0-5-4z" fill="#69c894" stroke="#a3f1bc"/><path d="M951 217h24" stroke="#e0ffe9" opacity=".8"/>
+      <rect x="1000" y="202" width="37" height="43" rx="9" fill="#ba8aec" stroke="#dfc3ff"/><path d="M1008 202v-5h21v5" stroke="#dfc3ff"/><path d="M1007 218h23" stroke="#f3e8ff" opacity=".8"/>
+      <path d="M1060 205q0-6 7-6h20q7 0 7 6v37q0 4-5 4h-24q-5 0-5-4z" fill="#e4a64f" stroke="#ffda91"/><path d="M1065 219h24" stroke="#fff0cb" opacity=".8"/>
+      <rect x="943" y="271" width="37" height="43" rx="9" fill="#57b8ab" stroke="#9de7d8"/><path d="M951 271v-5h21v5" stroke="#9de7d8"/><path d="M950 287h23" stroke="#e1fff7" opacity=".8"/>
+      <path d="M1000 272q0-6 7-6h20q7 0 7 6v37q0 4-5 4h-24q-5 0-5-4z" fill="#ec7785" stroke="#ffb4b9"/><path d="M1005 286h24" stroke="#ffe4e6" opacity=".8"/>
+      <rect x="1060" y="271" width="37" height="43" rx="9" fill="#6c9beb" stroke="#b4d0ff"/><path d="M1068 271v-5h21v5" stroke="#b4d0ff"/><path d="M1067 287h23" stroke="#e5efff" opacity=".8"/>
+    </g>
+    <!-- control/display panel: explicitly a lab status display, not a payment reader -->
+    <rect x="1154" y="119" width="82" height="145" rx="12" fill="#d1dfdf" stroke="#8ca6a9" stroke-width="2"/>
+    <rect x="1164" y="131" width="62" height="43" rx="7" fill="#102a38"/>
+    <circle cx="1176" cy="145" r="3" fill="#49e2b8"/><circle cx="1187" cy="145" r="3" fill="#49e2b8"/><circle cx="1198" cy="145" r="3" fill="#49e2b8"/>
+    <path d="M1173 160h42" stroke="#71a5ad" stroke-width="3" stroke-linecap="round"/>
+    <g fill="#526e78"><circle cx="1178" cy="192" r="5"/><circle cx="1195" cy="192" r="5"/><circle cx="1212" cy="192" r="5"/><circle cx="1178" cy="210" r="5"/><circle cx="1195" cy="210" r="5"/><circle cx="1212" cy="210" r="5"/><circle cx="1178" cy="228" r="5"/><circle cx="1195" cy="228" r="5"/><circle cx="1212" cy="228" r="5"/></g>
+    <!-- simulated retrieval hatch -->
+    <rect x="952" y="357" width="252" height="55" rx="10" fill="#183344" stroke="#607d88" stroke-width="2"/>
+    <rect x="1045" y="369" width="67" height="31" rx="7" fill="#071722" stroke="#537482"/>
+    <path d="M1061 385h34" stroke="#4ae2b9" stroke-width="3" stroke-linecap="round" opacity=".75"/>
+    <!-- feet -->
+    <path d="M937 433v9m290-9v9" stroke="#7d969c" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- small telemetry card -->
+  <g transform="translate(1279 150)">
+    <rect width="128" height="152" rx="16" fill="#102b39" stroke="#3a6572" stroke-width="2"/>
+    <text x="15" y="27" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" font-weight="700" letter-spacing="1" fill="#9ebcc4">TELEMETRY</text>
+    <circle cx="18" cy="52" r="4" fill="#4ae2b9"/><text x="30" y="56" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#e1eeee">22.0 °C</text>
+    <path d="M15 76h98" stroke="#31505c"/>
+    <text x="15" y="98" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" fill="#89a7b1">SOURCE</text>
+    <text x="15" y="119" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#64dcb9">SIMULATED</text>
+    <text x="15" y="139" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9" fill="#7899a5">NOT PHYSICAL DATA</text>
+  </g>
+</svg>
