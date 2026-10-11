@@ -1,11 +1,7 @@
+.env
+.venv/
 __pycache__/
 *.py[cod]
-*.egg-info/
-.pytest_cache/
-.venv/
-venv/
-.env
-*.db
-.coverage
-htmlcov/
-reports/*.ndjson
+vending-lab.sqlite3
+vending-lab.sqlite3-shm
+vending-lab.sqlite3-wal
